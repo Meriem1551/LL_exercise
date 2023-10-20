@@ -43,4 +43,5 @@ float calc_average(Marks *head);
 int getInt(char *s);
 char *getChar(char *s);
 float getFloat(char *s);
+void display(Student *h);
 #endif

@@ -36,12 +36,12 @@ struct Student
 
 /*FUNCTIONS*/
 
-Student *create_first_student_node(int i, char *f, char *l);
-Student *add_student_nodes(Student *h, int n);
-Marks *create_mark_list(int n);
-float calc_average(Marks *head);
-int getInt(char *s);
-char *getChar(char *s);
-float getFloat(char *s);
-void display(Student *h);
+Student *create_first_student_node(int, char *, char *);
+Student *add_student_nodes(Student *, int);
+Marks *create_mark_list(int);
+float calc_average(Marks *);
+int getInt(char *);
+char *getChar(char *);
+float getFloat(char *);
+void display(Student *);
 #endif

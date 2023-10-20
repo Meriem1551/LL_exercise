@@ -28,6 +28,7 @@ Student *create_first_student_node(int id, char *firstName, char *lastName)
     p_s->next_student = NULL;
     free(p_m);
     s_head = p_s;
-
+    free(p_s);
+    free(p_m);
     return s_head;
 }

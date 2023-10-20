@@ -25,4 +25,8 @@ int main(void)
     num_nodes = getInt("How many students do you have");
     s = create_first_student_node(ID, fName, lName);
     h = add_student_nodes(s, num_nodes);
+    display(h);
+    free(h);
+    free(s);
+    return 0;
 }

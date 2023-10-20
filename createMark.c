@@ -31,6 +31,7 @@ Marks *create_mark_list(int n)
         ptr->next_note = p_m;
         ptr = ptr->next_note;
     }
-    free(p_m, ptr);
+    free(p_m);
+    free(ptr);
     return head;
 }

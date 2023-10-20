@@ -36,4 +36,12 @@ struct Student
 
 /*FUNCTIONS*/
 
+Student *create_first_student_node();
+Student *add_student_nodes();
+Marks *create_note_list();
+float calc_average();
+int getInt(char *s);
+char *getChar(char *s);
+float getFloat(char *s);
+
 #endif

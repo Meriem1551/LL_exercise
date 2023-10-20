@@ -28,6 +28,6 @@ Student *add_student_nodes(Student *head, int n)
         ptr = ptr->next_student;
     }
     free(p_m);
-    fre(p_s);
+    free(p_s);
     return head;
 }

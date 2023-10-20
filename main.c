@@ -16,8 +16,8 @@ int main(void)
     h = (Student *)malloc(sizeof(Student));
     if (s == NULL || h == NULL)
     {
-        prinft("Allocation failed");
-        return NULL;
+        printf("Allocation failed");
+        return -1;
     }
     ID = getInt("enter the ID");
     fName = getChar("Enter the first name");

@@ -9,6 +9,7 @@
 
 Student *create_first_student_node(int id, char *firstName, char *lastName)
 {
+    int num_marks;
     Student *s_head;
     Student *p_s = (Student *)malloc(sizeof(Student));
     Marks *p_m = (Marks *)malloc(sizeof(Marks));
@@ -17,10 +18,11 @@ Student *create_first_student_node(int id, char *firstName, char *lastName)
         printf("Allocation failed");
         return NULL;
     }
+    num_marks = getInt("Enter num of marks");
     p_s->id = id;
     p_s->first_name = firstName;
     p_s->last_name = lastName;
-    p_m = create_mark_list();
+    p_m = create_mark_list(num_marks);
     p_s->average = calc_average(p_m);
     p_s->mark = p_m;
     p_s->next_student = NULL;

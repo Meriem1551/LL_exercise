@@ -37,7 +37,7 @@ struct Student
 /*FUNCTIONS*/
 
 Student *create_first_student_node(int i, char *f, char *l);
-Student *add_student_nodes(Student *h, int i, char *f, char *l, int n);
+Student *add_student_nodes(Student *h, int n);
 Marks *create_mark_list();
 float calc_average(Marks *head);
 int getInt(char *s);

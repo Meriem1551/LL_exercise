@@ -19,6 +19,5 @@ float calc_average(Marks *head)
         sum_coef += ptr->coef;
     }
     avgr = (float)sum_marks / sum_coef;
-    free(ptr);
     return avgr;
 }

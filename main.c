@@ -10,7 +10,6 @@ int main(void)
 {
     int ID, num_nodes;
     char *fName, *lName;
-    float Mark;
     Student *s, *h;
     s = (Student *)malloc(sizeof(Student));
     h = (Student *)malloc(sizeof(Student));

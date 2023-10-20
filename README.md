@@ -23,3 +23,7 @@ The main program.
 clone or fork  the repo to your local machine, open the terminal, run
 
     gcc -o <name for the exe file> *.c
+
+then
+
+    ./<name for the exe file>

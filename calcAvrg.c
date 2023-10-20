@@ -12,12 +12,12 @@ float calc_average(Marks *head)
 {
     float avgr = 0, sum_marks = 0, sum_coef = 0;
     Marks *ptr = head;
-
     while (ptr != NULL)
     {
         sum_marks += (ptr->mark) * (ptr->coef);
         sum_coef += ptr->coef;
+        ptr = ptr->next_note;
     }
-    avgr = (float)sum_marks / sum_coef;
+    avgr = (float)(sum_marks / sum_coef);
     return avgr;
 }

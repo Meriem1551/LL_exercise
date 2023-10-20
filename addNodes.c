@@ -17,7 +17,7 @@ Student *add_student_nodes(Student *head, int n)
     {
         p_s = (Student *)malloc(sizeof(Student));
         p_s->id = getInt("Enter the ID");
-        p_s->first_name = getChar("Entter the first name");
+        p_s->first_name = getChar("Enter the first name");
         p_s->last_name = getChar("Enter the last name");
         num_marks = getInt("Enter how many marks do you have");
         p_m = create_mark_list(num_marks);

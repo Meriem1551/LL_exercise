@@ -20,6 +20,7 @@ void display(Student *head)
             printf("First name is: %s\n", p->first_name);
             printf("Last name is: %s\n", p->last_name);
             printf("Average is: %f", p->average);
+            p = p->next_student;
         }
     }
 }

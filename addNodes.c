@@ -26,6 +26,7 @@ Student *add_student_nodes(Student *head, int n)
         p_s->next_student = NULL;
         ptr->next_student = p_s;
         ptr = ptr->next_student;
+        i++;
     }
     return head;
 }

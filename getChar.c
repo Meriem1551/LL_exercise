@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * getChar - reads input from user and returns it
+ * getChar - reads string from user and returns it
  * @s: the message will be displayed to the user
  * Return: string
  */

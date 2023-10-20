@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * getInt - reads input from user and returns it
+ * getInt - reads integer from user and returns it
  * @s: the message will be displayed to the user
  * Return: integer
  */

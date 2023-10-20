@@ -24,5 +24,5 @@ int main(void)
     lName = getChar("Enter the last name");
     num_nodes = getInt("How many students do you have");
     s = create_first_student_node(ID, fName, lName);
-    h = add_student_nodes(s, ID, fName, lName, num_nodes);
+    h = add_student_nodes(s, num_nodes);
 }

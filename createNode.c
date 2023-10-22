@@ -18,7 +18,7 @@ Student *create_first_student_node(int id, char *firstName, char *lastName)
         printf("Allocation failed");
         return NULL;
     }
-    num_marks = getInt("Enter how many marks do you have");
+    num_marks = getInt("Enter how many marks does this student have");
     p_s->id = id;
     p_s->first_name = firstName;
     p_s->last_name = lastName;

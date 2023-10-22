@@ -12,7 +12,7 @@ struct Marks
 {
     float mark;
     int coef;
-    struct Marks *next_note;
+    struct Marks *next_mark;
 };
 
 /**

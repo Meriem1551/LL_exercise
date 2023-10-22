@@ -17,19 +17,25 @@ Marks *create_mark_list(int n)
         printf("Allocation failed");
         return NULL;
     }
-    p_m->mark = getFloat("Enter the mark");
+    do
+    {
+        p_m->mark = getFloat("Enter a valid mark");
+    } while (p_m->mark < 0 || p_m->mark > 20);
     p_m->coef = getInt("Enter its coefficient");
-    p_m->next_note = NULL;
+    p_m->next_mark = NULL;
     head = p_m;
     ptr = head;
     while (i < n - 1)
     {
         p_m = (Marks *)malloc(sizeof(Marks));
-        p_m->mark = getFloat("Enter the mark");
+        do
+        {
+            p_m->mark = getFloat("Enter a valid mark");
+        } while (p_m->mark < 0 || p_m->mark > 20);
         p_m->coef = getInt("Enter its coefficient");
-        p_m->next_note = NULL;
-        ptr->next_note = p_m;
-        ptr = ptr->next_note;
+        p_m->next_mark = NULL;
+        ptr->next_mark = p_m;
+        ptr = ptr->next_mark;
         i++;
     }
     return head;

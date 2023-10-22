@@ -16,7 +16,7 @@ float calc_average(Marks *head)
     {
         sum_marks += (ptr->mark) * (ptr->coef);
         sum_coef += ptr->coef;
-        ptr = ptr->next_note;
+        ptr = ptr->next_mark;
     }
     avgr = (float)(sum_marks / sum_coef);
     return avgr;

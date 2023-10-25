@@ -54,11 +54,11 @@ File contains a function which print the created list.
 <h2>Use</h2>
 clone or fork  the repo to your local machine, open the terminal, run
 
-    gcc -o <name for the exe file> *.c
+    gcc -o <name of the exe file> *.c
 
 then
 
-    ./<name for the exe file>
+    ./<name of the exe file>
 
 **Author:**
 Meriem Boussaid

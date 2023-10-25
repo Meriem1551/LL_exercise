@@ -59,3 +59,6 @@ clone or fork  the repo to your local machine, open the terminal, run
 then
 
     ./<name for the exe file>
+
+**Author:**
+Meriem Boussaid
